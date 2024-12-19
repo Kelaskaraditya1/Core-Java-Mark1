@@ -4,7 +4,7 @@ public class Strings {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         //decleration and initialization
-//        String str ="Aditya";
+        String str ="Aditya";
         // iterating through string
 //        char arr[]=str.toCharArray();
 //        for(int i=0;i<arr.length;i++)
