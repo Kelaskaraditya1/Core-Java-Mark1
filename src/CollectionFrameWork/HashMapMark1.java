@@ -45,9 +45,14 @@ public class HashMapMark1 {
 //        map.remove(2);
 //        System.out.println(map);
 
-//        for iterating over the map
+//        for iterating over the map getting both key and value
         for(var e:map.entrySet())
-            System.out.println(e);
+            System.out.println(e.getKey()+" "+e.getValue());
+
+        for(var key:map.keySet())
+            System.out.println("The key is:"+key);
+        for(var value:map.entrySet())
+            System.out.println("The value is:"+value);
 
     }
 }

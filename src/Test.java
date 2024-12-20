@@ -1,7 +1,7 @@
 import MultiThreading.MyThread;
 import MultiThreading.RunnableThread;
+import java.util.*;
 
-import java.util.Scanner;
 
 class MaxRange extends Exception{
     @Override
@@ -118,6 +118,10 @@ class ScientificCalculator{
 }
 
 public class Test {
+    public static void iterateHashMap(Map<Integer,String> map){
+        for(var pair:map.entrySet())
+            System.out.println(pair.getKey()+" "+pair.getValue());
+    }
     public static void main(String[] args) {
 
         //   Strings
@@ -260,11 +264,310 @@ public class Test {
 //            System.out.println("Error:"+e.getMessage());
 //        }
 
-        MyThread thread1 = new MyThread();
-        RunnableThread thread2 = new RunnableThread();
-        Thread thread = new Thread(thread2);
-        thread1.run();
-        thread.run();
+//        MyThread thread1 = new MyThread();
+//        RunnableThread thread2 = new RunnableThread();
+//        Thread thread = new Thread(thread2);
+//        thread1.run();
+//        thread.run();
+
+//        Arraylist
+
+//        ArrayList<Integer> arrayList =new ArrayList<Integer>();
+//        System.out.println("Enter the number of elements");
+//        int no=s.nextInt();
+//        System.out.println("Enter the elements");
+
+        // input
+
+//        for(int i=0;i<no;i++){
+//            int element = s.nextInt();
+//            arrayList.add(element);
+//        }
+
+        //  output
+
+//        System.out.println(arrayList);
+
+        //iteration
+
+//        for(int val:arrayList)
+//            System.out.print(val+" ");
+
+        // remove
+
+//        int element = s.nextInt();
+//        arrayList.remove(Integer.valueOf(element));
+//        System.out.println("Enter the index on which value has to be removed");
+//        int index=s.nextInt();
+//        arrayList.remove(index);
+//        System.out.println(arrayList);
+
+        // update
+
+//        System.out.println("Enter the element which has to be entered");
+//        int element = s.nextInt();
+//        System.out.println("Enter the index at which it has to be entered");
+//        int index = s.nextInt();
+//        arrayList.set(index,element);
+//        System.out.println(arrayList);
+
+//        contains
+
+//        System.out.println("Enter the element which has to be searched ");
+//        int element=s.nextInt();
+//        if(arrayList.contains(element))
+//            System.out.println("Element is present");
+//        else
+//            System.out.println("Element is absent");
+
+//        clear
+
+//        arrayList.clear();
+//        System.out.println(arrayList);
+
+//        addAll
+
+//        ArrayList<Integer> arrayList1 = new ArrayList<Integer>();
+//        arrayList1.add(1);
+//        arrayList1.add(2);
+//        arrayList1.add(3);
+//        arrayList1.add(4);
+//        arrayList1.addAll(arrayList);
+//        System.out.println(arrayList1);
+
+
+//        Deque
+
+//        Deque<Integer> deque = new ArrayDeque<Integer>();
+//        System.out.println("Enter the number of elements");
+//        int no = s.nextInt();
+
+//        Input
+
+//        System.out.println("Enter the elements");
+//        for(int i=0;i<no;i++){
+//            int element = s.nextInt();
+//            deque.add(element);
+//        }
+
+//        Output
+
+//        System.out.println(deque);
+
+//        front and rare operations
+
+//        System.out.println("Enter the element at front");
+//        int front = s.nextInt();
+//        System.out.println("Enter the element at rare");
+//        int rare=s.nextInt();
+//        deque.addFirst(front);
+//        deque.addLast(rare);
+//        System.out.println(deque);
+//        System.out.println("Element at front is:"+deque.peek());
+//        System.out.println("Element at peek Front is:"+deque.peekFirst());
+//        System.out.println("Element at Last element is:"+deque.peekLast());
+
+//        Remove element
+
+//        deque.remove();
+//        System.out.println(deque);
+//        System.out.println("Enter the element to be removed");
+//        int element = s.nextInt();
+//        deque.remove(Integer.valueOf(element));
+//        System.out.println(deque);
+//        deque.removeFirst();
+//        deque.removeLast();
+//        System.out.println(deque);
+
+//        iteration
+
+//        for(int val:deque)
+//            System.out.print(val+" ");
+
+//        contains
+
+//        System.out.println("Enter the element to be searched in the deque");
+//        int element = s.nextInt();
+//        if(deque.contains(Integer.valueOf(element)))
+//            System.out.println("Element is present");
+//        else
+//            System.out.println("Element is absent");
+
+//        HashMap
+
+        Map<Integer,String> map = new HashMap<Integer,String>();
+//        System.out.println("Enter the no of key-value pair");
+//        int no = s.nextInt();
+
+        // input
+
+//        System.out.println("Enter the key-value pair");
+//        for(int i=0;i<no;i++){
+//            System.out.println("Enter the Key");
+//            int key=s.nextInt();
+//            System.out.println("Enter the value");
+//            String value=s.next();
+//            map.put(key,value);
+//        }
+        map.put(1,"Aditya");
+        map.put(2,"Paaji");
+        map.put(3,"Parth");
+        map.put(4,"Sandesh");
+        map.put(5,"Varad");
+//        System.out.println(map);
+
+//        iteration
+
+//        on Key based
+
+//        for(var key:map.keySet())
+//            System.out.print(key+" ");
+
+//        on Value based
+
+//        for(var value:map.values())
+//            System.out.print(value+" ");
+
+//        both key and value base
+
+//        for(var pair:map.entrySet())
+//            System.out.println(pair.getKey()+" "+pair.getValue());
+
+
+//        Remove Element from Map
+
+//        System.out.println("Enter the key which has to be removed from the HashMap");
+//        int key = s.nextInt();
+//        System.out.println("Enter the value which has to be removed from HashMap");
+//        String value = s.next();
+//        map.remove(key,value);
+//        iterateHashMap(map);
+
+//        update
+
+//        System.out.println("Enter the key for which the value has to be updated");
+//        int key = s.nextInt();
+//        System.out.println("Enter the value which has to be updated");
+//        String value = s.next();
+//        map.put(key,value);
+//        iterateHashMap(map);
+
+//        Contains
+
+//        System.out.println("Enter the key which has to be searched in the Map");
+//        int key = s.nextInt();
+//        if(map.containsKey(key))
+//            System.out.println("Key is Present in the Map");
+//        else
+//            System.out.println("Key is not present in the Map");
+//
+//        System.out.println("Enter the value to be searched in the Map");
+//        String value = s.next();
+//        if(map.containsValue(value))
+//            System.out.println("value is Present in the Map");
+//        else
+//            System.out.println("value is not present in the Map");
+
+
+//        HashSet
+
+//        HashSet<Integer> hashSet = new HashSet<>();
+//        System.out.println("Enter the number of elements");
+//        int no = s.nextInt();
+
+        // Input
+
+//        System.out.println("Enter the elements");
+//        for(int i=0;i<no;i++)
+//            hashSet.add(s.nextInt());
+
+
+//        Output
+
+//        System.out.println(hashSet);
+
+        // Iteration:
+//        for(var value:hashSet)
+//            System.out.println(value+" ");
+
+//        Remove
+
+//        System.out.println("Enter the value to be removed from hashset");
+//        int value = s.nextInt();
+//        hashSet.remove(Integer.valueOf(value));
+//        System.out.println(hashSet);
+
+//        Contains
+
+//        System.out.println("Enter the value which has to be searched from the hashset");
+//        int value = s.nextInt();
+//        if(hashSet.contains(value))
+//            System.out.println("Element is present in the Hashset");
+//        else
+//            System.out.println("Element is absent in the Hashset");
+
+
+//        Stack
+
+        Stack<String> stack = new Stack<>();
+
+//        Input
+
+//        System.out.println("Enter the number of elements to be entered in the Stack");
+//        int no = s.nextInt();
+//        System.out.println("Enter the names ");
+//        for(int i=0;i<no;i++){
+//            String name = s.next();
+//            stack.push(name);
+//        }
+        stack.add("Aditya");
+        stack.add("Varad");
+        stack.add("Parth");
+        stack.add("Paaji");
+        stack.add("Sandesh");
+
+//        System.out.println(stack);
+
+//        Iteration
+
+//        for(var value:stack)
+//            System.out.println(value+" ");
+
+//        Pop
+
+//        stack.pop();
+//        System.out.println(stack);
+
+//        Remove
+
+//            System.out.println(stack);
+//        System.out.println("Enter the value to be removed");
+//        String value = s.next();
+//        stack.remove(value);
+//        System.out.println("enter the index at which value has to be removed");
+//        int index = s.nextInt();
+//        stack.remove(index);
+//        stack.removeElementAt(index);
+//        System.out.println(stack);
+
+//        Contains
+
+//        String value = s.next();
+//        if(stack.contains(value))
+//            System.out.println("Value is Present in the Stack");
+//        else
+//            System.out.println("value is Absent in the Stack");
+
+//        LinkedList<Integer> linkedList = new LinkedList<>();
+//        System.out.println("Enter the number of the ");
+//        int no = s.nextInt();
+//        System.out.println("Enter the elements");
+//        for(int i=0;i<no;i++){
+//            int value = s.nextInt();
+//            linkedList.add(Integer.valueOf(value));
+//        }
+//        for(var value:linkedList)
+//            System.out.println(value+" ");
 
     }
 }
