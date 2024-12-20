@@ -10,7 +10,7 @@ public class Keys {
     public static final String USERNAME="root";
     public static final String PASSWORD="9819375722Aditya";
     public static final String INSERT_QUERY="insert into customer values(?,?,?,?,?)";
-    public static final String UPDATE_QUERY="update customer set CustomerName=? where CustomerId=?";
+    public static final String UPDATE_QUERY="update customer set CustomerName=?,CustomerAge=?,CustomerContact=?,CustomerNationality=? where CustomerId=?";
     public static final String DELETE_QUERY="delete from customer where CustomerId=?";
     public static final String SELECT_ALL_QUERY="select * from customer";
     public static final String SELECT_CUSTOMER_QUERY="select * from customer where CustomerId=?";

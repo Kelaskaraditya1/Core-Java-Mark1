@@ -4,24 +4,25 @@ public class DataBaseTransactions {
     public static void main(String[] args) {
 
         // inserting value in database.
-        Customer customer = new Customer("Aditya",22,"8591059220","Indian");
-        CustomerDao.insertCustomer(customer);
+//        Customer customer = new Customer("Aditya",22,"8591059220","Indian");
+//        DataAcessObject.insertCustomer(customer);
 
-        // updateing customer in database.
-        Customer updateCustomer = new Customer("Aditya Kelaskar",22,"8591059220","Indian");
-        CustomerDao.insertCustomer(updateCustomer);
-
+//        // updateing customer in database.
+//        Customer updateCustomer = new Customer("Saurabh",22,"9819375722","Madhya Pradesh");
+//        DataAcessObject.updateCustomer(updateCustomer,29);
+//
         // delete from customer database.
-        CustomerDao.deleteCustomer(22);
-
-        // getting all customers.
+//        DataAcessObject.deleteCustomer(29);
+//
+//        // getting all customers.
         ArrayList<Customer> arrayList = new ArrayList<Customer>();
-        arrayList=CustomerDao.getCustomers();
+        arrayList=DataAcessObject.getCustomerDetails();
         for(Customer custome1:arrayList)
             System.out.println(custome1.toString());
-
-//        for getting single Customer
-        System.out.println(CustomerDao.getCustomers(22));
+//
+////        for getting single Customer
+//        Customer customer = DataAcessObject.getCustomer(29);
+//        DataAcessObject.printDetails(customer);
 
     }
 }

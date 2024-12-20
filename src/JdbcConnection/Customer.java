@@ -62,4 +62,8 @@ public class Customer {
 
     }
 
+    @Override
+    public String toString() {
+        return "Id:"+this.getId()+" Name:"+this.getName()+" Age:"+this.getAge()+" Contact:"+this.getContact()+" Nationality:"+this.getNationality();
+    }
 }
