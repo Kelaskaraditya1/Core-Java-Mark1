@@ -1,5 +1,3 @@
-import MultiThreading.MyThread;
-import MultiThreading.RunnableThread;
 import java.util.*;
 
 
@@ -568,6 +566,9 @@ public class Test {
 //        }
 //        for(var value:linkedList)
 //            System.out.println(value+" ");
+
+
+
 
     }
 }
