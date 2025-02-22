@@ -3,7 +3,7 @@ import java.util.*;
 public class Main {
     public String name;
     public static void main(String[] args) {
-        // printint to console
+        // printing to console
         System.out.println("I am Ironman");
         // input
         Scanner s = new Scanner(System.in);

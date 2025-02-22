@@ -1,6 +1,6 @@
 package CoreJava;
 import java.util.*;
-public class ArrayofObjects {
+public class ArrayOfObjects {
     public static void printSudten(Student student)
     {
         System.out.println("The sid of the Student is:"+student.sid);
@@ -29,6 +29,6 @@ public class ArrayofObjects {
         System.out.println("Enter the no of student for printing");
         int n=s.nextInt();
         Student student1=student[n];
-        ArrayofObjects.printSudten(student1);
+        ArrayOfObjects.printSudten(student1);
     }
 }

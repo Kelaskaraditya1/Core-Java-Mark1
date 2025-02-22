@@ -1,3 +1,6 @@
+import org.w3c.dom.Text;
+
+import java.awt.*;
 import java.util.*;
 
 
@@ -115,11 +118,20 @@ class ScientificCalculator{
     }
 }
 
+
+
 public class Test {
     public static void iterateHashMap(Map<Integer,String> map){
         for(var pair:map.entrySet())
             System.out.println(pair.getKey()+" "+pair.getValue());
     }
+
+    public static void reverseUsingCallByValue(int a,int b){
+        a=a^b;
+        b=a^b;
+        b=a^b;
+    }
+
     public static void main(String[] args) {
 
         //   Strings
@@ -567,8 +579,29 @@ public class Test {
 //        for(var value:linkedList)
 //            System.out.println(value+" ");
 
-
+//        String text = s.nextLine();
+//        int count=0;
+//
+//        char arr1 []= text.toCharArray();
+//        char reverse [] = text.toCharArray();
+//        int i=0;
+//        int j=arr1.length-1;
+//        while(i<j){
+//            char tmp = reverse[i];
+//            reverse[i]=reverse[j];
+//            reverse[j]=tmp;
+//            i++;
+//            j--;
+//        }
+//
+//        for(int k=0;k<arr1.length;k++){
+//            if(arr1[k]==reverse[k])
+//                count++;
+//        }
+//
+//        System.out.println("The count is:"+count);
 
 
     }
 }
+

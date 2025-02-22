@@ -22,5 +22,6 @@ public class InnerClass{
         Polygon.EquilateralTriangle equilateralTriangle = new Polygon.EquilateralTriangle(length);
         System.out.println("The Area of the Equilateral Triangle is:"+equilateralTriangle.getArea(equilateralTriangle));
         System.out.println("The Perimeter of the Equilateral Triangle is:"+equilateralTriangle.getPerimeter(equilateralTriangle));
+
     }
 }

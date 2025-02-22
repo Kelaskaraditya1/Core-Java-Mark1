@@ -3,6 +3,7 @@ public class Student {
     public String name,sid;
     public int roll_no;
     public char div;
+
     public Student(String sid,String name,int roll_no,char div)
     {
         this.sid=sid;
