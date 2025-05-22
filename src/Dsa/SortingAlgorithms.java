@@ -82,6 +82,12 @@ public class SortingAlgorithms {
             mergeSort(arr,mid+1,end);
             merge(arr,start,mid,end);
         }
+
+
+        /*Time complexity:
+        best case: O(nlog(n))
+        worst case : O(nlog(n))
+        * */
     }
 
     public static int pivot(int arr[],int start,int end){
